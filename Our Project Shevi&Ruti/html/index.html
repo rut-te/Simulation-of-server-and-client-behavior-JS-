@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/client.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="shortcut icon" href="../pictures/לוגו.png">
+    <title>My Tasks</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <template>
+        <div class="signup">
+            <div id="formOfSignUp">
+                <h1 class="textInStart">Sign up</h1>
+                <input type="text" id="nameOfSignUp" name="name" placeholder="User name" required="">
+                <input type="email" id="mailOfSignUp" name="mail" placeholder="Email" required="">
+                <input type="password" id="passwordOfSignUp" name="password" placeholder="Password" minlength="6"
+                    required="">
+            </div>
+            <button id="sendFromSignup">send</button>
+            <button id="logIn">login</button>
+
+        </div>
+    </template>
+    <template>
+        <div class="login">
+            <div id="formOfLogin" >
+                <h1 class="textInStart">Login</h1>
+                <input type="text" id="nameOfLogin" name="name" placeholder="User name" required="">
+                <input type="password" id="passwordOfLogin" name="password" placeholder="Password" minlength="6"
+                    required="">
+            </div>
+            <button id="sendFromLogin" >send</button>
+            <button id="signup">signUp</button>
+        </div>
+
+    </template>
+    <template>
+
+        <div id="toFixed">
+            <button id="logOut">להתנתקות</button>
+            <h1>!?היי, אז בוא נתחיל להתקדם</h1>
+
+            <div id="searchAndAdd">
+
+                <button id="addTask" title="להוספת מטלה">➕</button>
+                <div id="search">
+                    <input id="whatToSearch" placeholder="לחיפוש מטלה" maxlength="30">
+                    <button id="sendToSearch" title="לחיפוש">🔎</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="toAppendTheNewTask">
+            <div id="newDivToNewTask"></div>
+        </div>
+
+
+        <div id="tasks">
+           
+        </div>
+
+        <div id="paging">
+            <button id="buttonToNextPageNotActive" class="buttonToNextPageNotActive">⬅</button>
+            <button id="buttonToBackPageNotActive" class="buttonToBackPageNotActive">➡</button>
+           
+        </div>
+
+
+    </template>
+
+</body>
+<script src="../js/DB.js"></script>
+<script src="../js/server.js"></script>
+<script src="../js/network.js"></script>
+<script src="../js/FAJAX.js"></script>
+<script src="../js/client.js"></script>
+
+</html>
